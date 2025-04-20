@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Cole Flournoy | SNHU Portfolio
+  </title>
+
+  <meta name="description" content="I'm a web developer based in Atlanta, GA with three years of professional experience working for SaaS companies">
+  <meta name="keywords" content="React, TypeScript, JavaScript, CSS, SQL, Postgres, MongoDB, Node, Agile" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#self-assessment" class="nav__link">Intro</a></li>
+          <li class="nav__item"><a href="#project-details" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#code-review" class="nav__link">Code Review</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Capstone Portfolio</span>
+        </h1>
+        <div style="display: flex; flex-direction: column; padding: 10px;">
+          <span>Cole Flournoy</span>
+          <i>B.S. in Computer Science at SNHU</i>
+        </div>
+        <a style="margin: 10px" href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    
+    <!-- ***** Self Assessment ***** -->
+
+    <section class="self-assessment" id="self-assessment">
+      <div class="row">
+        <h2>Intro</h2>
+        <div style="margin-top: 10px; padding: 10px; border: 1px solid var(--pink); border-radius: 6px;">
+          <p style="margin: 0;">
+            Hi! As I wrap up the final semester of my B.S. in Computer Science, I want to take some time to reflect on this final capstone project and the program as a whole. I came into this program 
+            after graduating from a coding bootcamp and working for two years as a frontend developer. With that experience, I was concerned that getting a CS degree might be one big rehash of things 
+            I already knew, but the reason I stuck with it is that I started to realize I was getting the best of both worlds. The coding bootcamp got me comfortable with coding and taught me how 
+            to do a very specific job well enough to get hired, but the Computer Science program has given me a breadth of exposure and knowledge that would have been very difficult to get any other 
+            way. Taking classes on the Software Development Lifecycle taught me the fundamentals and methodology behind the agile workflows that I used to collaborate and stay organized with my 
+            coworkers in my day-to-day job but never really had explained to me. Classes on software security exposed a lot of the gaps surrounding common vulnerabilities, coding best practices, and 
+            security tooling that my bootcamp left because there wasn’t time to cover these topics in depth. Both of these subject areas also gave me more exposure to the business side of software 
+            development and provided me opportunities to practice communicating technical information to a wide variety of stakeholders, including users and non-technical managers. The biggest benefit 
+            that I’ve received from this program is realizing that my software engineering experience was very limited. Previously, I could code in a few very web-development-specific languages to 
+            solve a few very web-development-specific problems, but now I have so many more tools to solve so many more types of problems. I’ve built and optimized neural networks with Python, 
+            implemented more advanced data structures and weighed the efficiency and situational tradeoffs of their usage, reverse engineered binary files into assembly language and C++, and much more. 
+            I have already seen how all of these experiences have helped me be more confident and effective in my current job as a web developer. The broad exposure to so many technologies has made me 
+            a more flexible and adaptable programmer, which I think is essential in a field where no two companies will use the exact same tech stack and the technology is constantly evolving.  
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Project ***** -->   
+
+    <section class="work" id="project-details">
+      <div class="row">
+        <h2>Project</h2>
+        <div style="margin-top: 10px; padding: 10px; border: 1px solid var(--pink); margin-bottom: var(--gutter-medium); border-radius: 6px;">
+          <p style="margin: 0;">
+            To demonstrate some of the most relevant skills I’ve gained in this program, I chose to build a full stack web application for my capstone that I think shows my abilities in three key 
+            categories: <strong>software design and engineering, algorithms and data structures, and databases</strong>. Specifically, I wanted to show programming flexibility by porting an existing 
+            project to a completely different tech stack. The original project was an Android inventory management app that I created as the final project for my Mobile Architecture and Programming 
+            class using Java and SQLite. The updated project is a full stack web application that leverages MongoDB, Express, React, and Node (the MERN stack) to add a significant amount of functionality, 
+            security, and usability to the app. Each of the three key categories mentioned above is covered in its own section below where I give more specifics about how I improved the project.    
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: var(--gutter-large)">
+          <span style="display: flex; flex-direction: column; align-items: center; max-width: 33%; gap: 10px;">
+            <img src="./images/Android_app.png" class="work__image" alt="Original Android app" />
+            <a href="https://github.com/cole-flournoy/portfolio/blob/main/portfolio_files/Mobile_InventoryAppFinal_ColeFlournoy.zip" target="_blank" class="link__text">
+              Source Code <span>&rarr;</span>
+            </a>
+          </span>
+          <img style="max-width: 10%; transform: rotate(90deg); margin: 30px;" src="./images/arrow-up-pink.svg" class="work__image" alt="Arrow icon" />
+          <span style="display: flex; flex-direction: column; align-items: center; max-width: 50%; gap: 10px;">
+            <img src="./images/MERN_app.png" class="work__image" alt="Updated MERN app" />
+            <a href="https://github.com/cole-flournoy/inventory-app" target="_blank" class="link__text">
+              Source Code <span>&rarr;</span>
+            </a>
+          </span>
+        </div>
+        
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Software Design and Engineering</h3>
+              <p>
+                The bulk of work in this section went toward converting the original Android app into a full stack MERN web application, but I also wanted to redesign the app to be more attractive and 
+                user-friendly. 
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Typescript</li>
+                <li>Node</li>
+                <li>Material UI</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/cole-flournoy/portfolio/blob/main/portfolio_files/Milestone%20Two%20Narrative.docx" target="_blank" class="link__text">
+                  Full Narrative <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/MERN_app_feature.png" class="work__image" alt="MERN app" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Data Structures and Algorithms</h3>
+              <p>
+                I added a search feature for the main table and implemented three common sorting algorithms (merge sort, bubble sort, and quick sort) to sort the table by any of the columns.
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/cole-flournoy/portfolio/blob/main/portfolio_files/Milestone%20Three%20Narrative.docx" target="_blank" class="link__text">
+                  Full Narrative <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/sort_options.png" class="work__image" alt="MERN app sorting feature" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Databases</h3>
+              <p>
+                The primary objective was to port the original SQLite database to a MongoDB database, but I also added encryption for user credentials, user authentication, role-based access 
+                control, and more realistic relationships between the data models. These enhancements were a huge improvement for security, which was lacking in the original project.
+              </p>
+              <ul class="work__list">
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Express</li>
+                <li>Bcrypt</li>
+                <li>Jason Web Tokens</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/cole-flournoy/portfolio/blob/main/portfolio_files/Milestone%20Four%20Narrative.docx" target="_blank" class="link__text">
+                  Full Narrative <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/login.png" class="work__image" alt="MERN app log in screen" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Code Review ***** -->
+    <section class="code-review" id="code-review">
+      <div class="row">
+        <h2>Code Review</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Video Explanation</h3>
+              <p>
+                This is a more in-depth explanation of the original project code and the details of my planned enhancements through the lens of a code review.
+              </p>
+
+            </div>
+            <div class="work__image-box">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7EMnYoYe3iI?si=xqbmER4yO_hiP89K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact" style="padding: 0; padding-top: var(--gutter-huge);">
+    <div class="row">
+      <h2>Connect With Me!</h2>
+      <div class="contact__info">
+        <p>
+          I'm a fullstack developer based in Atlanta, GA and I currently work remotely for a solar finance company. If you're a developer or tech company in 
+          the Atlanta area (or anywhere really), I would love to connect! My LinkedIn and Github are linked below. Those are the best ways to see what I'm up 
+          to and what I'm interested in.
+        </p>
+      </div>
+    </div>
+    
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="https://github.com/cole-flournoy" target="_blank" title="Link to Github Profile">
+              <img src="./images/github.svg" class="footer__social-image" alt="Github profile">
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/cole-e-flournoy/" target="_blank" title="Link to LinkedIn Profile">
+              <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin profile">
+            </a>
+          </li>
+        </ul>
+  
+        <p style="font-size: 1.2rem; margin: 0;">
+          Portfolio adapted from a template created by <a href="https://nisar.dev" target="_blank" class="link">Nisar</a>.
+        </p>
+      </div>
+    </footer>
+  </section>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
